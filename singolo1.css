@@ -117,3 +117,37 @@ body {
 }
 
 /* MAIN */
+.intro {
+  background: #f06c64;
+}
+
+.intro-slider {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  transform: rotateY(180deg);
+}
+
+.slider {
+  transition: opacity 0.3s;
+}
+
+.slider:hover {
+  opacity: 0.5;
+}
+
+.phone_vertical {
+  position: absolute;
+  left: 200px;
+  top: 78px;
+}
+
+.phone_horizontal {
+  position: absolute;
+  left: 450px;
+  top: 164px;
+}
