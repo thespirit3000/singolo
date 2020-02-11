@@ -55,6 +55,7 @@ body {
 .header {
   grid-area: header;
   background: #2d303a;
+  box-shadow: inset 0px -6px 0px 0px rgba(50, 55, 70, 1);
 }
 
 .header-inner {
