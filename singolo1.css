@@ -157,15 +157,33 @@ body {
   display: flex;
 }
 
+.section-title {
+  font-size: 30px;
+}
+
+.services-intro {
+  font-size: 18px;
+}
+
 .services-block {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -8px;
-  margin-right: -8px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .services-item {
   flex-basis: 33%;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.item-title {
+  font-size: 18px;
+}
+
+.item-text {
+  font-size: 12px;
 }
