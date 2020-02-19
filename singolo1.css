@@ -151,3 +151,21 @@ body {
   left: 450px;
   top: 164px;
 }
+
+.services {
+  color: #878da9;
+  display: flex;
+}
+
+.services-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.services-item {
+  flex-basis: 33%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
