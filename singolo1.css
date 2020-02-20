@@ -48,7 +48,9 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 940px;
+  max-width: 1020px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin: 0 auto;
 }
 
@@ -81,7 +83,6 @@ body {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: -0.75px;
-  text-align: justify;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -121,6 +122,7 @@ body {
 /* INTRO */
 .intro {
   background: #f06c64;
+  box-shadow: inset 0px -6px 0px 0px rgba(234, 102, 107, 1);
 }
 
 .intro-slider {
@@ -128,30 +130,41 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-.left {
+.slider-left {
   transform: rotateY(180deg);
-}
-
-.slider {
   transition: opacity 0.3s;
+  margin-bottom: 11px;
+  margin-left: 2px;
 }
 
-.slider:hover {
+.slider-left:hover {
+  transform: scale(1.2) rotateY(180deg);
+  opacity: 0.5;
+}
+
+.slider-right {
+  transition: opacity 0.3s;
+  margin-bottom: 11px;
+}
+
+.slider-right:hover {
+  transform: scale(1.2);
   opacity: 0.5;
 }
 
 .phone_vertical {
   position: absolute;
-  left: 200px;
-  top: 78px;
+  left: 72px;
+  top: 53px;
 }
 
 .phone_horizontal {
   position: absolute;
-  left: 450px;
-  top: 164px;
+  right: 71px;
+  top: 174px;
 }
 
 /* SERVICES */
@@ -163,7 +176,8 @@ body {
 }
 
 .section-title {
-  padding-top: 3.9rem;
+  padding-top: 3.8rem;
+  letter-spacing: 0.2px;
   font-size: 30px;
   padding-bottom: 1rem;
 }
@@ -172,27 +186,27 @@ body {
   font-weight: 300;
   font-size: 18px;
   letter-spacing: -0.04px;
-  line-height: 30px;
+  line-height: 31px;
 }
 
 .services-block {
   padding-top: 44px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 32px 20px;
+  grid-gap: 31px 20px;
   justify-content: space-between;
 }
 
 .services-item {
   display: flex;
-  flex-direction: row;
 }
 
 .about-item {
-  margin-left: 1.1rem;
+  margin-left: 19px;
 }
 
 .item-img {
+  margin-left: -1px;
   height: 62px;
   width: 62px;
 }
