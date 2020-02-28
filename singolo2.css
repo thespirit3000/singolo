@@ -39,13 +39,49 @@ body {
 .portfolio {
   background: #2d2f39;
   color: #666d89;
+  box-shadow: inset 0px -6px 0px 0px #323746;
 }
 
 .portfolio_intro {
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: -0.04px;
+  letter-spacing: -0.001px;
   line-height: 31px;
+}
+
+.portfolio_selector {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 19px;
+}
+
+.portfolio_selector__item {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.005px;
+  text-decoration: none;
+  border: 1px #767e9e solid;
+  border-radius: 5px;
+  color: #767e9e;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.portfolio_selector__item:hover {
+  color: #dedede;
+  border: 1px #dedede solid;
+}
+
+.selected {
+  color: #dedede;
+  border: 1px #dedede solid;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .portfolio_block {
@@ -53,6 +89,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px 20px;
   justify-content: space-between;
+  margin-bottom: 73px;
 }
 
 /* ABOUT US */
@@ -63,7 +100,7 @@ body {
 
 .about-us_intro {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 24px;
   letter-spacing: -0.04px;
   line-height: 31px;
 }
