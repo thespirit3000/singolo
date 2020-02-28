@@ -31,46 +31,48 @@ body {
 /* PORTFOLIO */
 .portfolio-title {
   padding-top: 3.8rem;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.01px;
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 1rem;
+  text-align: justify;
 }
 
 .portfolio {
-  background: #2d2f39;
+  background: #2d303a;
   color: #666d89;
   box-shadow: inset 0px -6px 0px 0px #323746;
-  padding-bottom: 74px;
+  padding-bottom: 73px;
 }
 
 .portfolio_intro {
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: -0.001px;
-  line-height: 30px;
+  letter-spacing: -0.22px;
+  line-height: 35px;
+  text-align: justify;
 }
 
 .portfolio_selector {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 11px;
+  padding-top: 7px;
   padding-bottom: 19px;
 }
 
 .portfolio_selector__item {
   font-size: 12px;
-  line-height: 20px;
+  line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0.005px;
+  letter-spacing: 0.001px;
   text-decoration: none;
   border: 1px #767e9e solid;
-  border-radius: 6px;
+  border-radius: 5px;
   color: #767e9e;
   padding-left: 7px;
-  padding-right: 7px;
-  margin-right: 10px;
+  padding-right: 5px;
+  margin-right: 9px;
   transition: color 0.3s;
 }
 
@@ -101,14 +103,16 @@ body {
   flex-direction: column;
   -ms-align-items: center;
   align-items: center;
+  box-shadow: inset 0px -6px 0px 0px #fff;
+  padding-bottom: 73px;
 }
 
 .about-title {
   padding-top: 3.7rem;
-  letter-spacing: -0.02px;
+  letter-spacing: -0.05px;
   font-size: 30px;
   font-weight: 900;
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
 }
 
 .about-us_intro {
@@ -116,9 +120,9 @@ body {
   font-weight: 300;
   font-size: 18px;
   text-align: justify;
-  letter-spacing: 0.15px;
-  line-height: 32px;
-  margin-bottom: 43px;
+  letter-spacing: -0.218px;
+  line-height: 31px;
+  margin-bottom: 42px;
 }
 
 .about-us_block {
@@ -137,8 +141,9 @@ body {
   font-size: 18px;
   font-weight: 900;
   color: #666d89;
-  text-align: justify;
-  letter-spacing: -0.01px;
+  text-align: left;
+  letter-spacing: -0.257px;
+  line-height: 20px;
   padding-top: 16px;
 }
 
@@ -146,6 +151,11 @@ body {
   font-size: 12px;
   font-weight: 400;
   text-align: justify;
+  line-height: 22px;
+  letter-spacing: -0.29px;
+  color: #767e9e;
+  padding-top: 10px;
+  padding-bottom: 22px;
 }
 
 .about-us_social {
@@ -156,11 +166,17 @@ body {
 }
 
 .social_link {
+  text-align: center;
   height: 32px;
   width: 32px;
   border: 1px #767e9e solid;
   border-radius: 16px;
-  padding-top: 8px;
-  padding-left: 10px;
+  padding-top: 7px;
   margin-right: 8px;
+  transition: filter 0.3s linear;
+}
+
+.social_link:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  /* border: 1px #fff solid; */
 }
