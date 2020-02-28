@@ -228,21 +228,60 @@ body {
 }
 
 /* PORTFOLIO */
+.portfolio-title {
+  padding-top: 3.8rem;
+  letter-spacing: 0.02px;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
 .portfolio {
   background: #2d2f39;
   color: #666d89;
+  box-shadow: inset 0px -6px 0px 0px #323746;
 }
 
 .portfolio_intro {
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: -0.04px;
-  line-height: 31px;
+  letter-spacing: -0.001px;
+  line-height: 30px;
+}
+
+.portfolio_selector {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 19px;
 }
 
 .portfolio_selector__item {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.005px;
   text-decoration: none;
-  color: #666d89;
+  border: 1px #767e9e solid;
+  border-radius: 6px;
+  color: #767e9e;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.portfolio_selector__item:hover {
+  color: #dedede;
+  border: 1px #dedede solid;
+}
+
+.selected {
+  color: #dedede;
+  border: 1px #dedede solid;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .portfolio_block {
@@ -250,29 +289,60 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px 20px;
   justify-content: space-between;
+  margin-bottom: 74px;
 }
 
 /* ABOUT US */
 .about-us {
   background: #f1f1f1;
   color: #666d89;
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.about-title {
+  padding-top: 3.7rem;
+  letter-spacing: -0.02px;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 1rem;
 }
 
 .about-us_intro {
+  font-family: Lato;
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: -0.04px;
-  line-height: 31px;
+  text-align: justify;
+  letter-spacing: 0.15px;
+  line-height: 32px;
+  margin-bottom: 43px;
 }
 
 .about-us_block {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 19px;
+  justify-content: space-between;
 }
 
 .about-us_item {
-  flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.about-us_title {
+  font-size: 18px;
+  font-weight: 900;
+  color: #666d89;
+  text-align: justify;
+  letter-spacing: -0.01px;
+  padding-top: 16px;
+}
+
+.about-us_text {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
 }
