@@ -171,7 +171,7 @@ body {
 .services {
   color: #878da9;
   background: #f2f2f2;
-  padding-bottom: 4.1rem;
+  padding-bottom: 65px;
   box-shadow: inset 0px -6px 0px 0px rgba(255, 255, 255, 1);
 }
 
@@ -228,21 +228,20 @@ body {
 }
 
 /* PORTFOLIO */
-/* PORTFOLIO */
-.portfolio-title {
-  padding-top: 3.8rem;
-  letter-spacing: 0.01px;
-  font-size: 30px;
-  font-weight: 900;
-  padding-bottom: 1rem;
-  text-align: justify;
-}
-
 .portfolio {
   background: #2d303a;
   color: #666d89;
   box-shadow: inset 0px -6px 0px 0px #323746;
   padding-bottom: 73px;
+}
+
+.portfolio-title {
+  padding-top: 3.7rem;
+  letter-spacing: 0.01px;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  text-align: justify;
 }
 
 .portfolio_intro {
