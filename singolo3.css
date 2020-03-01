@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato';
+  font-size: 100%;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1020px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
