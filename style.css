@@ -202,13 +202,31 @@ body {
 }
 
 .about-item {
-  margin-left: 19px;
+  flex: 1;
+  margin-left: 22px;
 }
 
+.img_container {
+  width: 59px;
+  height: 59px;
+  text-align: center;
+  margin-top: 3px;
+  padding-top: 12px;
+  border-radius: 29.5px;
+  border: 2px #767e9e solid;
+}
+
+/* .phone {
+  padding-top: 8px;
+}
+
+.star {
+  padding-top: -2px;
+  align-self: center;
+} */
 .item-img {
-  margin-left: -1px;
-  height: 62px;
-  width: 62px;
+  /* width: 32px;
+  height: 32px; */
 }
 
 .item-title {
