@@ -27,3 +27,65 @@ body {
   padding-right: 40px;
   margin: 0 auto;
 }
+
+/* Get a Quote */
+.quote {
+  background: #F06C64;
+  color: #F0CCCC;
+  box-shadow: inset 0px -6px 0px 0px #EA676B;
+  #EA676B
+}
+
+.quote-title {
+  padding-top: 3.8rem;
+  letter-spacing: 0.01px;
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 1rem;
+  text-align: justify;
+}
+
+.quote_intro {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.22px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+.quote_block {
+  margin-top: 47px;
+  margin-bottom: 47px;
+}
+
+.input_container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+}
+
+.quote_input {
+  margin-top: 15px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 12px;
+  border-width: 0px;
+  background-color: #D6564F;
+  color: #F48C8F;
+  border-style: solid;
+  border-radius: 3px;
+  resize: none;
+}
+
+.quote_input::placeholder {
+  color: #F48C8F;
+}
+
+.quote_input {
+  outline: none;
+}
+}
+
+.quote_block {}
