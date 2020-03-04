@@ -33,29 +33,31 @@ body {
   background: #F06C64;
   color: #F0CCCC;
   box-shadow: inset 0px -6px 0px 0px #EA676B;
-  #EA676B
+  padding-bottom: 3.65rem;
 }
 
 .quote-title {
-  padding-top: 3.8rem;
-  letter-spacing: 0.01px;
+  padding-top: 3.7rem;
+  letter-spacing: -0.001px;
   font-size: 30px;
   font-weight: 900;
-  padding-bottom: 1rem;
+  padding-bottom: 18px;
   text-align: justify;
 }
 
 .quote_intro {
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: -0.22px;
-  line-height: 35px;
+  letter-spacing: -0.3px;
+  line-height: 31px;
   text-align: justify;
 }
 
 .quote_block {
-  margin-top: 47px;
-  margin-bottom: 47px;
+  margin-top: 42px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
 
 .input_container {
@@ -63,13 +65,14 @@ body {
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  width: 620px;
+  min-width: 618px;
 }
 
 .quote_input {
-  margin-top: 15px;
+  height: 38px;
+  margin-bottom: 16px;
   border-radius: 3px;
-  padding: 5px;
+  padding-left: 14px;
   font-size: 12px;
   border-width: 0px;
   background-color: #D6564F;
@@ -77,6 +80,10 @@ body {
   border-style: solid;
   border-radius: 3px;
   resize: none;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  color: #f48c8f;
 }
 
 .quote_input::placeholder {
@@ -86,6 +93,61 @@ body {
 .quote_input {
   outline: none;
 }
+
+.quote_textarea {
+  font-family: 'Lato';
+  margin-bottom: 16px;
+  border-radius: 3px;
+  padding-left: 14px;
+  font-size: 12px;
+  border-width: 0px;
+  background-color: #D6564F;
+  color: #F48C8F;
+  border-style: solid;
+  border-radius: 3px;
+  resize: none;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: -0.3px;
+  color: #f48c8f;
+  /* height: 203px; */
 }
 
-.quote_block {}
+.quote_textarea::placeholder {
+  padding-top: 10px;
+  color: #F48C8F;
+  letter-spacing: -0.06px
+}
+
+.contact-information_container {
+  margin-left: 21px;
+}
+
+.contact-information_title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 900;
+  color: #f0d8d9;
+  margin-bottom: 0.5rem;
+}
+
+.contact-information_paragraph {
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 1.4rem;
+}
+
+.contact-information_link {
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-size: 12px;
+  text-align: justify;
+  text-decoration: none;
+}
+
+.link_img {}
