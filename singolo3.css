@@ -95,7 +95,7 @@ body {
 }
 
 .quote_textarea {
-  font-family: 'Lato';
+  font-family: "Lato";
   margin-bottom: 16px;
   border-radius: 3px;
   padding-left: 14px;
@@ -141,13 +141,71 @@ body {
   margin-bottom: 1.4rem;
 }
 
+.contact-information_item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .contact-information_link {
   line-height: 22px;
   color: #f0d8d9;
   font-family: "Lato";
   font-size: 12px;
-  text-align: justify;
   text-decoration: none;
 }
 
-.link_img {}
+.link_container {
+  margin-right: 10px;
+  text-align: center;
+  width: 13px;
+}
+
+/* FOOTER */
+.footer {
+  background: #2d303a;
+}
+
+.footer_inner {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 22px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #666d89;
+}
+
+/* social copy from singolo2 */
+.about-us_social {
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social_link {
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  border: 1px #666d89 solid;
+  border-radius: 16px;
+  padding-top: 7px;
+  margin-right: 8px;
+  transition: filter 0.3s linear;
+}
+
+.social_link:last-child {
+  margin-right: 0px;
+}
+
+.social_link:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  /* border: 1px #fff solid; */
+}
