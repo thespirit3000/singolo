@@ -155,6 +155,11 @@ body {
   font-family: "Lato";
   font-size: 12px;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-information_link:hover {
+  color: #2d303a;
 }
 
 .link_container {
