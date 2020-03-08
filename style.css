@@ -333,8 +333,15 @@ body {
   letter-spacing: -0.257px;
   line-height: 20px;
   padding-top: 16px;
+  max-width: 280px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  
 }
+.item_wrapper{
 
+}
 .about-us_text {
   font-size: 12px;
   font-weight: 400;
