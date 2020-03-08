@@ -33,7 +33,7 @@ body {
   background: #F06C64;
   color: #F0CCCC;
   box-shadow: inset 0px -6px 0px 0px #EA676B;
-  padding-bottom: 3.65rem;
+  padding-bottom: 5px;
 }
 
 .quote-title {
@@ -60,7 +60,7 @@ body {
   display: flex;
 }
 
-.input_container {
+.form {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -77,22 +77,41 @@ body {
   border-width: 0px;
   background-color: #D6564F;
   color: #F48C8F;
-  border-style: solid;
-  border-radius: 3px;
   resize: none;
   font-size: 12px;
   line-height: 22px;
   letter-spacing: -0.3px;
   color: #f48c8f;
 }
-
+.quote_input:invalid{
+  border:1px solid red;
+}
 .quote_input::placeholder {
   color: #F48C8F;
 }
-
-.quote_input {
-  outline: none;
+.form_button{
+  height: 38px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  padding: 0 16px;
+  font-size: 12px;
+  border-width: 0px;
+  background-color: #D6564F;
+  color: #F48C8F;
+  resize: none;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  color: #f48c8f;
+  text-align: center;
 }
+.form_button:hover{
+  background-color: #a6564F;
+}
+
+/* .quote_input {
+  outline: none;
+} */
 
 .quote_textarea {
   font-family: "Lato";
@@ -212,5 +231,4 @@ body {
 
 .social_link:hover {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-  /* border: 1px #fff solid; */
 }
