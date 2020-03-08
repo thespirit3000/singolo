@@ -88,7 +88,10 @@ JPG:
 **[Singolo. JPG](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/singolo-full.jpg)**
 
 
-Deploy 
+Deploy:
 
-** [Completed deploy Gh-pages](https://thespirit3000.github.io/singolo/)**
-** [Completed deploy Netlify](https://hungry-singolo.netlify.com/)**
+  Gh-pages: 
+** [Completed deploy Gh-pages](https://thespirit3000.github.io/singolo/) **
+
+  Netlify:
+** [Completed deploy Netlify](https://hungry-singolo.netlify.com/) **
