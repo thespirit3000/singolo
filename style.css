@@ -1,26 +1,4 @@
-/* @font-face {
-  font-family: 'Lato';
-  src: url("./assets/fonts/Lato-Black.ttf") format("ttf"),
-    font-weight: 900;
-}
 
-@font-face {
-  font-family: 'Lato';
-  src: url("./assets/fonts/Lato-Bold.ttf") format("ttf"),
-    font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url("./assets/fonts/Lato-Regular.ttf") format("ttf"),
-    font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url("./assets/fonts/Lato-Thin.ttf") format("ttf"),
-    font-weight: 300;
-} */
 *,
 *::after,
 *::before {
@@ -386,7 +364,7 @@ body {
 .social_link:last-child {
   margin-right: 0px;
 }
-/* Singolo 3 */
+
 /* Get a Quote */
 .quote {
   background: #F06C64;
@@ -564,28 +542,3 @@ body {
   font-size: 12px;
   color: #666d89;
 }
-
-/* social copy from singolo2
-.about-us_social {
-  height: 32px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.social_link {
-  text-align: center;
-  height: 32px;
-  width: 32px;
-  border: 1px #666d89 solid;
-  border-radius: 16px;
-  padding-top: 7px;
-  margin-right: 8px;
-  transition: filter 0.3s linear;
-}
-
-
-
-.social_link:hover {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-} */
