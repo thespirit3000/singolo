@@ -208,6 +208,8 @@ body {
   margin-top: -5px;
   line-height: 22px;
   font-size: 12px;
+  height: 65px;
+  overflow: hidden;
 }
 
 /* PORTFOLIO */
