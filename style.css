@@ -276,6 +276,9 @@ body {
   grid-gap: 20px 20px;
   justify-content: space-between;
 }
+.portfolio_block__item:nth-child(n+13){
+  display: none;
+}
 
 /* ABOUT US */
 .about-us {
