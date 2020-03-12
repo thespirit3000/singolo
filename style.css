@@ -143,7 +143,7 @@ body::-webkit-scrollbar {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
 }
@@ -152,18 +152,9 @@ body::-webkit-scrollbar {
   color: rgba(0,0,0,0.6);
 }
 
-.phone_vertical {
-  position: absolute;
-  left: 72px;
-  top: 53px;
+.slider_img {
+  height: 100%;
 }
-
-.phone_horizontal {
-  position: absolute;
-  right: 71px;
-  top: 174px;
-}
-
 /* SERVICES */
 .services {
   color: #878da9;
