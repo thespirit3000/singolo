@@ -59,10 +59,10 @@ const showSlides = (n) => {
 
 const changeDisplay = (selector) => {
     let screen = document.querySelector(selector);
-    if (screen.style.opacity === '0') {
-        screen.style.opacity = "1";
-    } else {
+    if (screen.style.opacity == '1') {
         screen.style.opacity = '0';
+    } else {
+        screen.style.opacity = '1';
     };
 }
 
@@ -72,5 +72,6 @@ const initialize = () => {
     showSlides(slideIndex);
 };
 
-window.onload = initialize;
+document.addEventListener("DOMContentLoaded", initialize())
+// window.onload = initialize;
 window.onscroll = scrollHandle;
