@@ -18,7 +18,16 @@ const handleBody = () => {
     body.addEventListener("click", handleClick);
 };
 
+const scrollHandle = () => {
+    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+        document.querySelector(".header-inner").style.height = "50px";
+    } else {
+        document.querySelector(".header-inner").style.height = "95px";
+    }
+}
+
 const initialize = () => {
     handleBody();
 };
 window.onload = initialize;
+window.onscroll = scrollHandle;
