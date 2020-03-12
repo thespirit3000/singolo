@@ -135,12 +135,6 @@ body::-webkit-scrollbar {
   border-radius: 30px;
 }
 
-.screen{
-  width: 216px;
-  height: 458px;
-  background-color: black;
-  border-radius: 30px;
-}
 .vertical_phone {
   position: absolute;
   top: 55px;
@@ -161,7 +155,7 @@ body::-webkit-scrollbar {
 .screen{
   width: 189px;
   height: 334px;
-  background-color: black;
+  background-color:#2d303a;
   border-radius: 5px;
 }
 .screen_vertical{
