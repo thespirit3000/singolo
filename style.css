@@ -155,6 +155,22 @@ body::-webkit-scrollbar {
 .slider_img {
   height: 100%;
 }
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 /* SERVICES */
 .services {
   color: #878da9;
