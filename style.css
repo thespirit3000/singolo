@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .header-logo {
