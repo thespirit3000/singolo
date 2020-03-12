@@ -1,9 +1,17 @@
+
+
 const handleClick = event => {
     if (event.target.classList.contains("header-nav_item")) {
-        console.log(true);
         let activeItem = document.querySelector(".activeItem");
         activeItem.classList.remove("activeItem");
         event.target.classList.add("activeItem");
+    }
+    if (event.target.classList.contains("slider-left")) {
+        console.log('left');
+        
+    }
+    if (event.target.classList.contains("slider-right")) {
+        console.log('right');
     }
     // if (event.target.classList)
     // if (e.target.id === "increaseButton") {
