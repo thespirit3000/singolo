@@ -80,7 +80,6 @@ body::-webkit-scrollbar {
 
 .header-nav_item:hover {
   opacity: 0.4;
-  pointer: cursor;
 }
 
 .header-nav_item::after {
@@ -356,7 +355,6 @@ body::-webkit-scrollbar {
 
 }
 
-.item_wrapper {}
 
 .about-us_text {
   font-size: 12px;
