@@ -22,8 +22,12 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas: 'header'
     'main';
+    scroll-behavior: smooth;
+    
 }
-
+body::-webkit-scrollbar {
+  display: none;
+}
 .wrapper {
   width: 100%;
   max-width: 1020px;
@@ -37,6 +41,9 @@ body {
   grid-area: header;
   background: #2d303a;
   box-shadow: inset 0px -6px 0px 0px rgba(50, 55, 70, 1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header-inner {
@@ -88,6 +95,9 @@ body {
   padding: 0;
 }
 
+.activeItem {
+  color: #f06c64;
+}
 .active {
   color: #f06c64;
 }
