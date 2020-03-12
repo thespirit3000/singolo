@@ -113,38 +113,42 @@ body::-webkit-scrollbar {
 /* MAIN */
 /* INTRO */
 .intro {
-  background: #f06c64;
-  box-shadow: inset 0px -6px 0px 0px rgba(234, 102, 107, 1);
+  background: #f2f2f2;
+  /* box-shadow: inset 0px -6px 0px 0px rgba(234, 102, 107, 1); */
 }
 
 .intro-slider {
   height: 600px;
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
   align-items: center;
   position: relative;
+  margin: 0 auto;
 }
 
-.slider-left {
-  transform: rotateY(180deg);
-  transition: opacity 0.3s;
-  margin-bottom: 11px;
-  margin-left: 2px;
+.mySlides {
+  display: none;
+  position: relative;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  color:rgb(255, 255, 255, 0.4);
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
 }
 
-.slider-left:hover {
-  transform: scale(1.2) rotateY(180deg);
-  opacity: 0.5;
-}
-
-.slider-right {
-  transition: opacity 0.3s;
-  margin-bottom: 11px;
-}
-
-.slider-right:hover {
-  transform: scale(1.2);
-  opacity: 0.5;
+.prev:hover, .next:hover {
+  color: rgba(0,0,0,0.6);
 }
 
 .phone_vertical {
