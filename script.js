@@ -20,6 +20,10 @@ const handleClick = event => {
     if (event.target.classList.contains("horizontal_phone")) {
         changeDisplay('.screen_horizontal');
     };
+    if (event.target.classList.contains("portfolio_selector__item")) {
+        shuffleDom(".portfolio_block");
+    };
+
 };
 
 const handleBody = () => {
@@ -64,6 +68,17 @@ const changeDisplay = (selector) => {
     } else {
         screen.style.opacity = '1';
     };
+}
+
+const domArray = (domSelector) => {
+    return document.querySelectorAll(domSelector)
+};
+
+const shuffleDom = (parentSelector) => {
+    let list = document.querySelector(parentSelector);
+        for (i = list.children.length; i >= 0; i--) {
+            list.appendChild(list.children[Math.random() * i | 0]);
+        }
 }
 
 const initialize = () => {
