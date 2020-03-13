@@ -4,34 +4,32 @@ let state = {
 
 const handleClick = event => {
     if (event.target.classList.contains("header-nav_item")) {
-        let activeItem = document.querySelector(".activeItem");
-        activeItem.classList.remove("activeItem");
-        event.target.classList.add("activeItem");
+        changeActive("activeItem", '.header-nav_item', event.target);
     };
+
     if (event.target.classList.contains("prev")) {
         plusSlides(-1);
     };
+
     if (event.target.classList.contains("next")) {
         plusSlides(1);
     };
+
     if (event.target.classList.contains("vertical_phone")) {
         changeDisplay('.screen_vertical');
     };
+
     if (event.target.classList.contains("horizontal_phone")) {
         changeDisplay('.screen_horizontal');
     };
+
     if (event.target.classList.contains("portfolio_selector__item")) {
         shuffleDom(".portfolio_block");
-        let activeItem = document.querySelector(".selected");
-        activeItem.classList.remove("selected");
-        event.target.classList.add("selected");
+        changeActive("selected", '.portfolio_selector__item', event.target);
     };
+
     if (event.target.classList.contains("portfolio_block__item")) {
-        let portfolioItems = document.querySelectorAll('.portfolio_block__item');
-        for (i = 0; i < portfolioItems.length; i++) {
-            portfolioItems[i].className = portfolioItems[i].className.replace(" active_portfolio", "");
-        }
-        event.target.classList.add("active_portfolio");
+        changeActive("active_portfolio", '.portfolio_block__item', event.target);
     };
 };
 
@@ -47,6 +45,7 @@ const scrollHandle = () => {
         document.querySelector(".header-inner").style.height = "95px";
     }
 }
+
 const plusSlides = (n) => {
     showSlides(state.slideIndex += n);
 }
@@ -78,6 +77,14 @@ const changeDisplay = (selector) => {
         screen.style.opacity = '1';
     };
 }
+
+const changeActive = (activeClassSelector, domSelector, eventTarget) => {
+    let domItems = domArray(domSelector);
+    for (i = 0; i < domItems.length; i++) {
+        domItems[i].className = domItems[i].className.replace(` ${activeClassSelector}`, "");
+    }
+    eventTarget.classList.add(activeClassSelector);
+};
 
 const domArray = (domSelector) => {
     return document.querySelectorAll(domSelector)
