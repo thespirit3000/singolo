@@ -22,6 +22,9 @@ const handleClick = event => {
     };
     if (event.target.classList.contains("portfolio_selector__item")) {
         shuffleDom(".portfolio_block");
+        let activeItem = document.querySelector(".selected");
+        activeItem.classList.remove("selected");
+        event.target.classList.add("selected");
     };
 
 };
