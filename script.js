@@ -26,7 +26,13 @@ const handleClick = event => {
         activeItem.classList.remove("selected");
         event.target.classList.add("selected");
     };
-
+    if (event.target.classList.contains("portfolio_block__item")) {
+        let portfolioItems = document.querySelectorAll('.portfolio_block__item');
+        for (i = 0; i < portfolioItems.length; i++) {
+            portfolioItems[i].className = portfolioItems[i].className.replace(" active_portfolio", "");
+        }
+        event.target.classList.add("active_portfolio");
+    };
 };
 
 const handleBody = () => {
@@ -79,9 +85,9 @@ const domArray = (domSelector) => {
 
 const shuffleDom = (parentSelector) => {
     let list = document.querySelector(parentSelector);
-        for (i = list.children.length; i >= 0; i--) {
-            list.appendChild(list.children[Math.random() * i | 0]);
-        }
+    for (i = list.children.length; i >= 0; i--) {
+        list.appendChild(list.children[Math.random() * i | 0]);
+    }
 }
 
 const initialize = () => {

@@ -368,6 +368,9 @@ body::-webkit-scrollbar {
   justify-content: space-between;
 }
 
+.active_portfolio{
+  box-shadow: 0px 0px 0px 5px #F06C64;
+}
 .portfolio_block__item:nth-child(n+13) {
   display: none;
 }
