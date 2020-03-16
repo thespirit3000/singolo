@@ -1,3 +1,7 @@
+import {
+  Modal
+} from "./modules/Modal.js";
+
 let state = {
   slideIndex: 1
 };
@@ -33,9 +37,43 @@ const handleClick = event => {
   }
 };
 
+const generateContactModal = () => {
+  let data = getFormData("quote", "subject", "description");
+  const template = `<h3>The letter was sent</h3>${data}`;
+  renderModalWindow(template);
+};
+
+const renderModalWindow = content => {
+  let modal = new Modal("contact");
+  modal.buildModal(content);
+};
+
 const handleBody = () => {
   const body = document.querySelector("body");
   body.addEventListener("click", handleClick);
+};
+
+const handleForm = () => {
+  const form = document.querySelector(".form");
+  form.addEventListener("submit", handleSubmit);
+};
+
+const handleSubmit = () => {
+  event.preventDefault();
+  generateContactModal();
+};
+
+const getFormData = (formName, ...formData) => {
+  let template = "";
+  formData.forEach(element => {
+    let value = document.forms[formName][element].value;
+    if (value == "") {
+      template += `<div>Without ${element}</div>`;
+    } else {
+      template += `<div><h4 class="modal_string-name">${element}: </h4>${value}</div>`;
+    }
+  });
+  return template;
 };
 
 const scrollHandle = () => {
@@ -83,7 +121,7 @@ const changeDisplay = selector => {
 
 const changeActive = (activeClassSelector, domSelector, eventTarget) => {
   let domItems = domArray(domSelector);
-  for (i = 0; i < domItems.length; i++) {
+  for (let i = 0; i < domItems.length; i++) {
     domItems[i].className = domItems[i].className.replace(
       ` ${activeClassSelector}`,
       ""
@@ -98,7 +136,7 @@ const domArray = domSelector => {
 
 const shuffleDom = parentSelector => {
   let list = document.querySelector(parentSelector);
-  for (i = list.children.length; i >= 0; i--) {
+  for (let i = list.children.length; i >= 0; i--) {
     list.appendChild(list.children[(Math.random() * i) | 0]);
   }
 };
@@ -107,8 +145,9 @@ const initialize = () => {
   handleBody();
   let slideIndex = 1;
   showSlides(slideIndex);
+  handleForm();
 };
 
-document.addEventListener("DOMContentLoaded", initialize());
-// window.onload = initialize;
+// document.addEventListener("DOMContentLoaded", initialize());
+window.onload = initialize;
 window.onscroll = scrollHandle;

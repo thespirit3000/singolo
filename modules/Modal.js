@@ -3,7 +3,6 @@ export class Modal {
     this.classes = classes;
     this.modal = '';
     this.modalContent = '';
-    this.modalBtnClose = '';
     this.modalBtnOk = '';
     this.overlay = '';
   }
@@ -12,8 +11,6 @@ export class Modal {
     this.overlay = this.createDomNode(this.overlay, 'div', 'overlay');
     this.modal = this.createDomNode(this.modal, 'div', 'modal');
     this.modalContent = this.createDomNode(this.modalContent, 'div', 'modal_content');
-    this.modalBtnClose = this.createDomNode(this.modalBtnClose, 'button', 'btn', 'modal_close');
-    this.modalBtnClose.innerHTML = '<i class="fa fa-close modal_close"></i>';
     this.modalBtnOk = this.createDomNode(this.modalBtnOk, 'button', 'btn', 'modal_ok');
     this.modalBtnOk.innerHTML = 'OK';
     this.setContent(content);
@@ -40,7 +37,6 @@ export class Modal {
   }
 
   constructModal() {
-    this.modal.appendChild(this.modalBtnClose);
     this.modal.appendChild(this.modalContent);
     this.modal.appendChild(this.modalBtnOk);
     this.overlay.appendChild(this.modal);

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./style.css" />
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Singolo</title>
 </head>
 
@@ -237,11 +238,11 @@
           mauris condimentum nibh.
         </p>
         <div class="quote_block">
-          <form class="form" action="URL">
-            <input class="quote_input" type="text" placeholder="Name (Required)" required />
-            <input class="quote_input" type="email" placeholder="Email (Required)" required />
-            <input class="quote_input" placeholder="Subject" />
-            <textarea class="quote_textarea" placeholder="Describe your project in detail..." rows="12"></textarea>
+          <form class="form" action="" method="post" name="quote">
+            <input class="quote_input name" type="text" placeholder="Name (Required)" required />
+            <input class="quote_input email" type="email" placeholder="Email (Required)" required />
+            <input class="quote_input subject" placeholder="Subject" name="subject" />
+            <textarea class="quote_textarea descr" placeholder="Describe your project in detail..." rows="12" name="description"></textarea>
             <p><input type="submit" class="form_button" value="Send!"></p>
           </form>
           <article class="contact-information_container">
@@ -288,6 +289,14 @@
     </div>
   </footer>
 </body>
-<script src="script.js"></script>
+<!-- <div class="overlay">
+  <div class="modal">
+    <h4>Letter sended!</h4> 
+    <div class="modal_text subject">Subject: Singolo</div>
+    <div class="modal_text description">Discription: Portfolio project</div>
+    <input type="submit" class="modal_button" value="OK">
+  </div>
+</div> -->
+<script src="script.js" type="module"></script>
 
 </html>
