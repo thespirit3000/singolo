@@ -1,7 +1,3 @@
-// import {
-//   Modal
-// } from "./modules/Modal.js";
-
 class Modal {
   constructor(classes) {
     this.classes = classes;
@@ -212,6 +208,5 @@ const initialize = () => {
   handleForm();
 };
 
-// document.addEventListener("DOMContentLoaded", initialize());
 window.onload = initialize;
 window.onscroll = scrollHandle;
