@@ -63,7 +63,8 @@ class Modal {
 }
 
 let state = {
-  slideIndex: 1
+  slideIndex: 1,
+  maxSigns : 240,
 };
 
 const handleClick = event => {
@@ -201,11 +202,21 @@ const shuffleDom = parentSelector => {
   }
 };
 
+setMaxSigns = (elementSelector, maxSigns) =>{
+  const element = document.querySelector(elementSelector);
+  element.setAttribute('maxlength', `${maxSigns}`);
+}
+
+setMaxSignsTextArea = () => {
+  setMaxSigns('.quote_textarea', state.maxSigns );
+}
+
 const initialize = () => {
   handleBody();
   let slideIndex = 1;
   showSlides(slideIndex);
   handleForm();
+  setMaxSignsTextArea();
 };
 
 window.onload = initialize;
