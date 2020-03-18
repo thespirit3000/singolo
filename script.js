@@ -64,7 +64,7 @@ class Modal {
 
 let state = {
   slideIndex: 1,
-  maxSigns : 240,
+  maxSigns: 240,
 };
 
 const handleClick = event => {
@@ -137,7 +137,7 @@ const getFormData = (formName, ...formData) => {
   return template;
 };
 
-const scrollHandle = () => {
+const headerShrink = () => {
   if (
     document.body.scrollTop > 120 ||
     document.documentElement.scrollTop > 120
@@ -146,7 +146,23 @@ const scrollHandle = () => {
   } else {
     document.querySelector(".header-inner").style.height = "95px";
   }
+}
+
+const headerChangeActive = () => {
+  let anchorList = domArray('.anchor');
+  anchorList.forEach(element => {
+    if (Math.abs(element.getBoundingClientRect().y) < 300 && element.getBoundingClientRect().y > 50) {
+      let activeItem = document.querySelector(`#link_${element.id}`);
+      changeActive('activeItem', '.header-nav_item', activeItem);
+    }
+  })
+}
+
+const scrollHandle = () => {
+  headerShrink();
+
 };
+
 
 const plusSlides = n => {
   showSlides((state.slideIndex += n));
@@ -202,13 +218,13 @@ const shuffleDom = parentSelector => {
   }
 };
 
-setMaxSigns = (elementSelector, maxSigns) =>{
+const setMaxSigns = (elementSelector, maxSigns) => {
   const element = document.querySelector(elementSelector);
   element.setAttribute('maxlength', `${maxSigns}`);
 }
 
-setMaxSignsTextArea = () => {
-  setMaxSigns('.quote_textarea', state.maxSigns );
+const setMaxSignsTextArea = () => {
+  setMaxSigns('.quote_textarea', state.maxSigns);
 }
 
 const initialize = () => {
@@ -217,7 +233,9 @@ const initialize = () => {
   showSlides(slideIndex);
   handleForm();
   setMaxSignsTextArea();
+
 };
 
 window.onload = initialize;
 window.onscroll = scrollHandle;
+window.onwheel = headerChangeActive;
