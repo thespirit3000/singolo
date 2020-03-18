@@ -232,6 +232,9 @@ body::-webkit-scrollbar {
     opacity: 1
   }
 }
+.anchor{
+  scroll-margin-top: 32px;
+}
 
 /* SERVICES */
 .services {
@@ -239,6 +242,7 @@ body::-webkit-scrollbar {
   background: #f2f2f2;
   box-shadow: inset 0px -6px 0px 0px rgba(255, 255, 255, 1);
   padding-bottom: 66px;
+  
 }
 
 .section-title {
