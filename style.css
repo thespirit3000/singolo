@@ -31,6 +31,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+:target:before {
+  content:"";
+  display:block;
+  height:50px; /* fixed header height*/
+  margin:-50px 0 0; /* negative fixed header height */
+  }
+
 .wrapper {
   width: 100%;
   max-width: 1020px;
@@ -260,11 +267,12 @@ body::-webkit-scrollbar {
 /* ==================================================================================================================== */
 
 .anchor{
-  scroll-margin-top: 32px;
+  scroll-margin-top: 85px;
 }
 
 /* SERVICES */
 .services {
+  scroll-margin-top: 85px;  
   color: #878da9;
   background: #f2f2f2;
   box-shadow: inset 0px -6px 0px 0px rgba(255, 255, 255, 1);

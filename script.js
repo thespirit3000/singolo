@@ -63,11 +63,8 @@ class Modal {
 }
 
 let state = {
-  slideIndex: 1,
   maxSigns: 240,
 };
-
-
 
 const generateContactModal = () => {
   let data = getFormData("quote", "subject", "description");
@@ -120,22 +117,14 @@ const headerShrink = () => {
 }
 
 const headerChangeActive = () => {
-  let anchorList = domArray('.anchor');
+  let anchorList = domArray('.anchor');  
   anchorList.forEach(element => {
-    if (Math.abs(element.getBoundingClientRect().y) < 300 && element.getBoundingClientRect().y > 50) {
+    if (element.getBoundingClientRect().top < 300) {
       let activeItem = document.querySelector(`#link_${element.id}`);
       changeActive('activeItem', '.header-nav_item', activeItem);
     }
   })
 }
-
-const scrollHandle = () => {
-  headerShrink();
-
-};
-
-
-
 
 let slides = document.querySelectorAll('.mySlides');
 let currentSlide = 0;
@@ -216,8 +205,12 @@ const setMaxSignsTextArea = () => {
   setMaxSigns('.quote_textarea', state.maxSigns);
 }
 
-
 // -------------------------------------------------------------------------------
+
+const scrollHandle = () => {
+  headerShrink();
+};
+
 const handleClick = event => {
   if (event.target.classList.contains("header-nav_item")) {
     changeActive("activeItem", ".header-nav_item", event.target);
@@ -257,7 +250,6 @@ const initialize = () => {
   handleBody();
   handleForm();
   setMaxSignsTextArea();
-
 };
 
 window.onload = initialize;
