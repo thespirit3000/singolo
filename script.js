@@ -67,36 +67,7 @@ let state = {
   maxSigns: 240,
 };
 
-const handleClick = event => {
-  if (event.target.classList.contains("header-nav_item")) {
-    changeActive("activeItem", ".header-nav_item", event.target);
-  }
 
-  if (event.target.classList.contains("prev")) {
-    plusSlides(-1);
-  }
-
-  if (event.target.classList.contains("next")) {
-    plusSlides(1);
-  }
-
-  if (event.target.classList.contains("vertical_phone")) {
-    changeDisplay(".screen_vertical");
-  }
-
-  if (event.target.classList.contains("horizontal_phone")) {
-    changeDisplay(".screen_horizontal");
-  }
-
-  if (event.target.classList.contains("portfolio_selector__item")) {
-    shuffleDom(".portfolio_block");
-    changeActive("selected", ".portfolio_selector__item", event.target);
-  }
-
-  if (event.target.classList.contains("portfolio_block__item")) {
-    changeActive("active_portfolio", ".portfolio_block__item", event.target);
-  }
-};
 
 const generateContactModal = () => {
   let data = getFormData("quote", "subject", "description");
@@ -164,28 +135,46 @@ const scrollHandle = () => {
 };
 
 
-const plusSlides = n => {
-  showSlides((state.slideIndex += n));
-};
 
-const currentSlide = n => {
-  showSlides((state.slideIndex = n));
-};
 
-const showSlides = n => {
-  let i;
-  let slides = document.querySelectorAll(".mySlides");
-  if (n > slides.length) {
-    state.slideIndex = 1;
-  }
-  if (n < 1) {
-    state.slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[state.slideIndex - 1].style.display = "block";
-};
+let slides = document.querySelectorAll('.mySlides');
+let currentSlide = 0;
+let isEnabled = true;
+
+const changeCurrentSlider = (n) => {
+  currentSlide = (n + slides.length) % slides.length;
+}
+
+const hideSlider = (direction) => {
+  isEnabled =false;
+  slides[currentSlide].classList.add(direction);
+  slides[currentSlide].addEventListener('animationend', function(){
+    this.classList.remove('active_slide', direction);
+    
+  })
+}
+
+const showSlider = (direction) => {
+  slides[currentSlide].classList.add('next_slide', direction);
+  slides[currentSlide].addEventListener('animationend', function(){
+    this.classList.remove('next_slide', direction);
+    this.classList.add('active_slide');
+    isEnabled =true;
+  })
+}
+
+const previousSlider = (n) => {
+  hideSlider('to-right');
+  changeCurrentSlider(n - 1);
+  showSlider('from-left');
+}
+
+const nextSlider = (n) => {
+  hideSlider('to-left');
+  changeCurrentSlider(n + 1);
+  showSlider('from-right');
+}
+
 
 const changeDisplay = selector => {
   let screen = document.querySelector(selector);
@@ -227,10 +216,45 @@ const setMaxSignsTextArea = () => {
   setMaxSigns('.quote_textarea', state.maxSigns);
 }
 
+
+// -------------------------------------------------------------------------------
+const handleClick = event => {
+  if (event.target.classList.contains("header-nav_item")) {
+    changeActive("activeItem", ".header-nav_item", event.target);
+  }
+
+  if (event.target.classList.contains("prev")) {
+    if (isEnabled) {
+      previousSlider(currentSlide)
+    }
+  }
+
+  if (event.target.classList.contains("next")) {
+    if (isEnabled) {
+      nextSlider(currentSlide)
+    }
+  }
+
+  if (event.target.classList.contains("vertical_phone")) {
+    changeDisplay(".screen_vertical");
+  }
+
+  if (event.target.classList.contains("horizontal_phone")) {
+    changeDisplay(".screen_horizontal");
+  }
+
+  if (event.target.classList.contains("portfolio_selector__item")) {
+    shuffleDom(".portfolio_block");
+    changeActive("selected", ".portfolio_selector__item", event.target);
+  }
+
+  if (event.target.classList.contains("portfolio_block__item")) {
+    changeActive("active_portfolio", ".portfolio_block__item", event.target);
+  }
+};
+
 const initialize = () => {
   handleBody();
-  let slideIndex = 1;
-  showSlides(slideIndex);
   handleForm();
   setMaxSignsTextArea();
 
