@@ -758,18 +758,33 @@ body::-webkit-scrollbar {
     height: auto;
   }
 
+  .portfolio_selector__item {
+    font-size: 12px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px #767e9e solid;
+    border-radius: 5px;
+    color: #767e9e;
+    margin-right: 10px;
+    transition: color 0.3s;
+    height: 22px;
+    padding: 3px auto;
+    text-align: center;
+  }
+
   .services-block {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px 10px;
+    grid-gap: 16px 16px;
     justify-content: space-between;
   }
 
   .portfolio_block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px 16px;
+    grid-gap: 14px 13px;
     /* justify-content: space-between; */
   }
 
