@@ -738,16 +738,68 @@ body::-webkit-scrollbar {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
-
-/* Extra small devices (phones, 600px and down) */
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 375px) {
+
+  .wrapper {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
   .services-block {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px 10px;
+    justify-content: space-between;
+  }
+
+  .portfolio_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px 16px;
+    /* justify-content: space-between; */
+  }
+
+  .portfolio_block__item {
+    width: 100%;
+  }
+
+  .about-us_block {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0 19px;
+    justify-content: space-between;
+  }
+  .about-us_img{
+    width: 100%;
+    height: auto;
+
+  }
+  .quote_block{
+    display: block;
+  }
+  .form_button{
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/* 
+@media only screen and (max-width: 768px) {
+
+/* 
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  } */
+
+  /* .services-block {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -767,51 +819,4 @@ body::-webkit-scrollbar {
     height: auto;
   }
 
-}
-
-@media only screen and (max-width: 375px) {
-  .services-block {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px 10px;
-    justify-content: space-between;
-  }
-
-  .portfolio_block {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px 16px;
-    /* justify-content: space-between; */
-  }
-
-  .portfolio_block__item {
-    width: 100%;
-    height: auto;
-  }
-
-  .about-us_block {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0 19px;
-    justify-content: space-between;
-  }
-  .about-us_img{
-    width: 100%;
-    /* height: auto; */
-
-  }
-  .quote_block{
-    display: block;
-  }
-  .form_button{
-    display: block;
-    width: 100%;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+} */ 
