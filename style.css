@@ -32,11 +32,13 @@ body::-webkit-scrollbar {
 }
 
 :target:before {
-  content:"";
-  display:block;
-  height:50px; /* fixed header height*/
-  margin:-50px 0 0; /* negative fixed header height */
-  }
+  content: "";
+  display: block;
+  height: 50px;
+  /* fixed header height*/
+  margin: -50px 0 0;
+  /* negative fixed header height */
+}
 
 .wrapper {
   width: 100%;
@@ -124,13 +126,14 @@ body::-webkit-scrollbar {
   /* box-shadow: inset 0px -6px 0px 0px rgba(234, 102, 107, 1); */
 }
 
-.slide_container{
+.slide_container {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
   max-width: 1020px;
-} 
+}
+
 .mySlides {
   position: relative;
   display: none;
@@ -143,13 +146,13 @@ body::-webkit-scrollbar {
   display: block;
 }
 
-.next_slide { 
+.next_slide {
   position: absolute;
   top: 0;
   /* width: 100%; */
 }
 
-.phone{
+.phone {
   width: 216px;
   height: 458px;
   border-radius: 30px;
@@ -161,7 +164,7 @@ body::-webkit-scrollbar {
   left: 112px;
   z-index: 20;
   opacity: 0;
-  
+
 }
 
 .horizontal_phone {
@@ -172,27 +175,30 @@ body::-webkit-scrollbar {
   transform: rotate(90deg);
   opacity: 0.6;
 }
-.screen{
+
+.screen {
   width: 189px;
   height: 334px;
-  background-color:#2d303a;
+  background-color: #2d303a;
   border-radius: 5px;
 }
-.screen_vertical{
+
+.screen_vertical {
   opacity: 0;
   position: absolute;
   top: 118px;
   left: 126px;
   z-index: 10;
   transition: opacity 0.6s;
-  
+
 }
-.screen_horizontal{
+
+.screen_horizontal {
   opacity: 0;
   position: absolute;
   top: 118px;
   left: 557px;
-  z-index: 10;  
+  z-index: 10;
   transform: rotate(90deg);
   transition: opacity 0.6s;
 }
@@ -226,23 +232,23 @@ body::-webkit-scrollbar {
 /* ==================================================================================================================== */
 .to-left {
 
-          animation-name: left;
+  animation-name: left;
 }
 
 .from-right {
 
-          animation-name: right;
+  animation-name: right;
 }
 
 .to-right {
 
-          animation-name: right;
+  animation-name: right;
   animation-direction: reverse;
 }
 
 .from-left {
 
-          animation-name: left;
+  animation-name: left;
   animation-direction: reverse;
 }
 
@@ -250,6 +256,7 @@ body::-webkit-scrollbar {
   from {
     left: 0;
   }
+
   to {
     left: -100%;
   }
@@ -259,6 +266,7 @@ body::-webkit-scrollbar {
   from {
     left: 100%;
   }
+
   to {
     left: 0;
   }
@@ -266,18 +274,18 @@ body::-webkit-scrollbar {
 
 /* ==================================================================================================================== */
 
-.anchor{
+.anchor {
   scroll-margin-top: 85px;
 }
 
-/* SERVICES */
+/* ============================= SERVICES =======================================*/
 .services {
-  scroll-margin-top: 85px;  
+  scroll-margin-top: 85px;
   color: #878da9;
   background: #f2f2f2;
   box-shadow: inset 0px -6px 0px 0px rgba(255, 255, 255, 1);
   padding-bottom: 66px;
-  
+
 }
 
 .section-title {
@@ -340,7 +348,7 @@ body::-webkit-scrollbar {
   overflow: hidden;
 }
 
-/* PORTFOLIO */
+/* ============================= PORTFOLIO =======================================*/
 .portfolio {
   background: #2d303a;
   color: #666d89;
@@ -407,14 +415,16 @@ body::-webkit-scrollbar {
   justify-content: space-between;
 }
 
-.active_portfolio{
+.active_portfolio {
   box-shadow: 0px 0px 0px 5px #F06C64;
 }
+
 .portfolio_block__item:nth-child(n+13) {
   display: none;
 }
 
-/* ABOUT US */
+/* ============================= ABOUT US =======================================*/
+
 .about-us {
   background: #f1f1f1;
   color: #666d89;
@@ -689,15 +699,16 @@ body::-webkit-scrollbar {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4) ;
+  background-color: rgba(0, 0, 0, 0.4);
   /* opacity: 0.5; */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
 }
-.modal{
-  background: #f1f1f1 ;
+
+.modal {
+  background: #f1f1f1;
   padding: 1rem;
   color: #666d89;
   border: #666d89 1px solid;
@@ -706,20 +717,101 @@ body::-webkit-scrollbar {
   text-align: justify;
   line-height: 2rem;
 }
-.modal_string-name{
+
+.modal_string-name {
   text-transform: capitalize;
 }
+
 .btn {
   background-color: #666d89;
   border: none;
-  color:#f1f1f1;
+  color: #f1f1f1;
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
   margin: 8px auto;
   display: block;
-  }
+}
 
 .btn:hover {
   background-color: #848db1;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Extra small devices (phones, 600px and down) */
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .services-block {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 10px;
+    justify-content: space-between;
+  }
+
+  .portfolio_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 20px;
+    justify-content: space-between;
+  }
+
+  .portfolio_block__item {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .services-block {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px 10px;
+    justify-content: space-between;
+  }
+
+  .portfolio_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px 16px;
+    /* justify-content: space-between; */
+  }
+
+  .portfolio_block__item {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-us_block {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0 19px;
+    justify-content: space-between;
+  }
+  .about-us_img{
+    width: 100%;
+    /* height: auto; */
+
+  }
+  .quote_block{
+    display: block;
+  }
+  .form_button{
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
