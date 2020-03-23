@@ -549,6 +549,7 @@ body::-webkit-scrollbar {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  justify-content: space-between;
 }
 
 .form {
@@ -556,7 +557,6 @@ body::-webkit-scrollbar {
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  min-width: 618px;
 }
 
 .quote_input {
@@ -573,6 +573,7 @@ body::-webkit-scrollbar {
   line-height: 22px;
   letter-spacing: -0.3px;
   color: #f48c8f;
+  width: 618px;
 }
 
 .quote_input:invalid {
@@ -747,7 +748,14 @@ body::-webkit-scrollbar {
   .wrapper {
     width: 100%;
     max-width: 375px;
+    padding-left: 32px;
+    padding-right: 32px;
     margin: 0 auto;
+  }
+
+  .slider_img{
+    width: 100%;
+    height: auto;
   }
 
   .services-block {
@@ -783,6 +791,20 @@ body::-webkit-scrollbar {
   .quote_block{
     display: block;
   }
+
+  .quote_input{
+    width: 100%;
+  }
+
+  .form_wrapper{
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  /* .form{
+    max-width: 375px;
+    margin: 0 auto;
+  } */
+
   .form_button{
     display: block;
     width: 100%;
