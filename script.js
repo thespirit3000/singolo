@@ -211,6 +211,14 @@ const scrollHandle = () => {
   headerShrink();
 };
 
+const addShrinkMenuOnMediaQuery = (x) => {
+    if (x.matches) { // If media query matches
+      window.onscroll = scrollHandle;
+    }
+}
+
+
+
 const handleClick = event => {
   if (event.target.classList.contains("header-nav_item")) {
     changeActive("activeItem", ".header-nav_item", event.target);
@@ -253,5 +261,8 @@ const initialize = () => {
 };
 
 window.onload = initialize;
-window.onscroll = scrollHandle;
+//window.onscroll = scrollHandle;
 window.onwheel = headerChangeActive;
+let x = window.matchMedia("(min-width: 375px)")
+addShrinkMenuOnMediaQuery(x) // Call listener function at run time
+x.addListener(addShrinkMenuOnMediaQuery)
