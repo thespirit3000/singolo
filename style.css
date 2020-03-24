@@ -66,7 +66,7 @@ body::-webkit-scrollbar {
   transition: 0.3s;
 }
 
-.burger_menu{
+.burger_menu {
   display: none;
 }
 
@@ -751,12 +751,12 @@ body::-webkit-scrollbar {
 
   .wrapper {
     width: 100%;
-    max-width: 765px;
     padding-left: 32px;
     padding-right: 32px;
     margin: 0 auto;
   }
-/* -----------------------------  Header  ----------------------------------------------- */
+
+  /* -----------------------------  Header  ----------------------------------------------- */
   .header-inner {
     height: 71px;
     display: flex;
@@ -766,18 +766,27 @@ body::-webkit-scrollbar {
     position: relative;
   }
 
-.header-nav{
-  display: none;
-}
+  .header-nav {
+    display: none;
+  }
 
-  .burger_menu{
+  .burger_menu {
     display: inline-block;
     position: absolute;
     cursor: pointer;
     left: 0;
   }
 
-  .bar1, .bar2, .bar3 {
+  .header-logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19.6875px;
+    line-height: 24px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
     width: 25px;
     height: 2.4px;
     background-color: #d1d1d1;
@@ -786,19 +795,22 @@ body::-webkit-scrollbar {
     border-radius: 1.2px;
   }
 
-  
-  .change .bar1{
+
+  .change .bar1 {
     transform: rotate(90deg) translate(6px, 12px);
   }
-  .change .bar2{
+
+  .change .bar2 {
     transform: rotate(90deg) translate(-3px, 0px);
   }
-  .change .bar3{
+
+  .change .bar3 {
     transform: rotate(90deg) translate(-10px, -12px);
   }
-/* -----------------------------  Slider  ----------------------------------------------- */
 
-  .slider_img{
+  /* -----------------------------  Slider  ----------------------------------------------- */
+
+  .slider_img {
     width: 100%;
     height: auto;
   }
@@ -828,7 +840,7 @@ body::-webkit-scrollbar {
 
   .portfolio_block {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 14px 13px;
     /* justify-content: space-between; */
   }
@@ -837,35 +849,42 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 
+  .portfolio_block__item:nth-child(n+7) {
+    display: none;
+  }
+
   .about-us_block {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0 19px;
     justify-content: space-between;
   }
-  .about-us_img{
+
+  .about-us_img {
     width: 100%;
     height: auto;
 
   }
-  .quote_block{
+
+  .quote_block {
     display: block;
   }
 
-  .quote_input{
+  .quote_input {
     width: 100%;
   }
 
-  .form_wrapper{
+  .form_wrapper {
     max-width: 375px;
     margin: 0 auto;
   }
+
   /* .form{
     max-width: 375px;
     margin: 0 auto;
   } */
 
-  .form_button{
+  .form_button {
     display: block;
     width: 100%;
   }
@@ -881,7 +900,7 @@ body::-webkit-scrollbar {
     margin: 0 auto;
   } */
 
-  /* .services-block {
+/* .services-block {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -901,4 +920,4 @@ body::-webkit-scrollbar {
     height: auto;
   }
 
-} */ 
+} */
