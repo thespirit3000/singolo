@@ -153,7 +153,7 @@ body::-webkit-scrollbar {
 .next_slide {
   position: absolute;
   top: 0;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .phone {
@@ -276,7 +276,7 @@ body::-webkit-scrollbar {
   }
 }
 
-/* ==================================================================================================================== */
+/* ============================================================================== */
 
 .anchor {
   scroll-margin-top: 85px;
@@ -809,6 +809,15 @@ body::-webkit-scrollbar {
   }
 
   /* -----------------------------  Slider  ----------------------------------------------- */
+
+
+  .slide_container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    /* max-width: 375px; */
+  }
 
   .slider_img {
     width: 100%;
