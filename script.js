@@ -263,6 +263,6 @@ const initialize = () => {
 window.onload = initialize;
 //window.onscroll = scrollHandle;
 window.onwheel = headerChangeActive;
-let x = window.matchMedia("(min-width: 375px)")
+let x = window.matchMedia("(min-width: 767px)")
 addShrinkMenuOnMediaQuery(x) // Call listener function at run time
-x.addListener(addShrinkMenuOnMediaQuery)
+x.addListener(addShrinkMenuOnMediaQuery)  
