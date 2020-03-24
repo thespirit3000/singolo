@@ -849,7 +849,7 @@ body::-webkit-scrollbar {
   /* -----------------------------  Portfolio  ----------------------------------------------- */
   .portfolio_block {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 14px 13px;
   }
 
@@ -857,7 +857,7 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 
-  .portfolio_block__item:nth-child(n+7) {
+  .portfolio_block__item:nth-child(n+9) {
     display: none;
   }
 
