@@ -66,6 +66,10 @@ body::-webkit-scrollbar {
   transition: 0.3s;
 }
 
+.burger_menu{
+  display: none;
+}
+
 .header-logo {
   font-size: 25px;
   font-weight: 700;
@@ -743,15 +747,56 @@ body::-webkit-scrollbar {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767px) {
 
   .wrapper {
     width: 100%;
-    max-width: 375px;
+    max-width: 765px;
     padding-left: 32px;
     padding-right: 32px;
     margin: 0 auto;
   }
+/* -----------------------------  Header  ----------------------------------------------- */
+  .header-inner {
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    position: relative;
+  }
+
+.header-nav{
+  display: none;
+}
+
+  .burger_menu{
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2.4px;
+    background-color: #d1d1d1;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 1.2px;
+  }
+
+  
+  .change .bar1{
+    transform: rotate(90deg) translate(6px, 12px);
+  }
+  .change .bar2{
+    transform: rotate(90deg) translate(-3px, 0px);
+  }
+  .change .bar3{
+    transform: rotate(90deg) translate(-10px, -12px);
+  }
+/* -----------------------------  Slider  ----------------------------------------------- */
 
   .slider_img{
     width: 100%;
