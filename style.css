@@ -837,12 +837,11 @@ body::-webkit-scrollbar {
     grid-gap: 16px 16px;
     justify-content: space-between;
   }
-
+  /* -----------------------------  Portfolio  ----------------------------------------------- */
   .portfolio_block {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 14px 13px;
-    /* justify-content: space-between; */
   }
 
   .portfolio_block__item {
@@ -853,6 +852,16 @@ body::-webkit-scrollbar {
     display: none;
   }
 
+
+  .about-title {
+    padding-top: 32px;
+  }
+
+    /* -----------------------------  About us  ----------------------------------------------- */
+  .about-us {
+    padding-bottom: 0;
+  }
+
   .about-us_block {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -860,11 +869,16 @@ body::-webkit-scrollbar {
     justify-content: space-between;
   }
 
+  .about-us_item{
+    padding-bottom: 32px;
+  }
+
   .about-us_img {
     width: 100%;
     height: auto;
-
   }
+
+/* -----------------------------  Quote  ----------------------------------------------- */
 
   .quote_block {
     display: block;
@@ -878,11 +892,6 @@ body::-webkit-scrollbar {
     max-width: 375px;
     margin: 0 auto;
   }
-
-  /* .form{
-    max-width: 375px;
-    margin: 0 auto;
-  } */
 
   .form_button {
     display: block;
