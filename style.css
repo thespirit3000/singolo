@@ -58,14 +58,6 @@ body::-webkit-scrollbar {
   z-index: 100;
 }
 
-.header-inner {
-  height: 95px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.3s;
-}
-
 .burger_menu {
   display: none;
 }
@@ -746,7 +738,7 @@ body::-webkit-scrollbar {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) {
 
   .wrapper {
     width: 100%;
@@ -960,9 +952,25 @@ body::-webkit-scrollbar {
 .copyright {
   display: none;
 }
-/* 
-@media only screen and (max-width: 768px) {
 
+@media only screen and (min-width: 768px) {
+
+  .header-inner {
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .header-nav {
+    display: block;
+  }
+
+  .burger_menu {
+    display: none;
+  }
 /* 
   .wrapper {
     width: 80%;
