@@ -815,20 +815,7 @@ body::-webkit-scrollbar {
     height: auto;
   }
 
-  .portfolio_selector__item {
-    font-size: 12px;
-    letter-spacing: -1px;
-    font-weight: 400;
-    text-decoration: none;
-    border: 1px #767e9e solid;
-    border-radius: 5px;
-    color: #767e9e;
-    margin-right: 10px;
-    transition: color 0.3s;
-    height: 22px;
-    padding: 3px auto;
-    text-align: center;
-  }
+
 
   /* -----------------------------  Services  ----------------------------------------------- */
 
@@ -850,6 +837,21 @@ body::-webkit-scrollbar {
   }
 
   /* -----------------------------  Portfolio  ----------------------------------------------- */
+
+  .portfolio_selector__item {
+    font-size: 12px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 1px #767e9e solid;
+    border-radius: 5px;
+    color: #767e9e;
+    margin-right: 10px;
+    transition: color 0.3s;
+    height: 22px;
+    padding: 3px auto;
+    text-align: center;
+  }
 
   .portfolio {
     padding-top: 42px;
@@ -915,7 +917,8 @@ body::-webkit-scrollbar {
   .quote_input {
     width: 100%;
   }
-/* 
+
+  /* 
   .form_wrapper {
     max-width: 375px;
     margin: 0 auto;
@@ -926,15 +929,18 @@ body::-webkit-scrollbar {
     display: block;
     width: 100%;
     height: 50px;
-    background-color:#FBC65F;;
+    background-color: #FBC65F;
+    ;
     color: #886A30;
     text-transform: uppercase;
   }
 }
+
 .contact-information_container {
   margin-top: 32px;
   margin-left: 0px;
 }
+
 .contact-information_paragraph {
   margin-bottom: 5px;
 }
@@ -960,6 +966,7 @@ body::-webkit-scrollbar {
     padding-right: 41px;
     margin: 0 auto;
   }
+
   .header-inner {
     height: 95px;
     display: flex;
@@ -982,15 +989,16 @@ body::-webkit-scrollbar {
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
-  letter-spacing: -0.03em;
+    letter-spacing: -0.03em;
   }
-/* 
+
+  /* 
   .wrapper {
     width: 80%;
     margin: 0 auto;
   } */
 
-/* .services-block {
+  /* .services-block {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
