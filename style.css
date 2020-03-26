@@ -954,7 +954,12 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (min-width: 768px) {
-
+  .wrapper {
+    width: 100%;
+    padding-left: 41px;
+    padding-right: 41px;
+    margin: 0 auto;
+  }
   .header-inner {
     height: 95px;
     display: flex;
@@ -970,6 +975,14 @@ body::-webkit-scrollbar {
 
   .burger_menu {
     display: none;
+  }
+
+  .header-logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  letter-spacing: -0.03em;
   }
 /* 
   .wrapper {
