@@ -1090,5 +1090,11 @@ body::-webkit-scrollbar {
     height: 38px;
   }
   /* -----------------------------  Footer  ----------------------------------------------- */
+  .footer_inner {
+    height: 76px;
+  }
+}
 
+@media only screen and (min-width: 1020px){
+  
 }
