@@ -998,25 +998,20 @@ body::-webkit-scrollbar {
   .next {
     padding-right: 25px;
   }
+
+
 /* -----------------------------  Services  ----------------------------------------------- */
-  /* .services-block {
+
+.services {
+  padding-top: 39px;
+  padding-bottom: 64px;
+}
+
+.services-block {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px 10px;
+    grid-gap: 39px 53px;
     justify-content: space-between;
   }
-
-  .portfolio_block {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px 20px;
-    justify-content: space-between;
-  }
-
-  .portfolio_block__item {
-    width: 100%;
-    height: auto;
-  }
-
-} */
+}
