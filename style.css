@@ -548,12 +548,12 @@ body::-webkit-scrollbar {
   justify-content: space-between;
 }
 
-.form {
+/* .form {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .quote_input {
   height: 38px;
@@ -569,7 +569,6 @@ body::-webkit-scrollbar {
   line-height: 22px;
   letter-spacing: -0.3px;
   color: #f48c8f;
-  width: 618px;
 }
 
 .quote_input:invalid {
@@ -914,12 +913,6 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 
-  /* 
-  .form_wrapper {
-    max-width: 375px;
-    margin: 0 auto;
-  } */
-
   .form_button {
     font-weight: bold;
     display: block;
@@ -932,28 +925,28 @@ body::-webkit-scrollbar {
   }
 
 
-.contact-information_container {
-  margin-top: 32px;
-  margin-left: 0px;
-}
+  .contact-information_container {
+    margin-top: 32px;
+    margin-left: 0px;
+  }
 
-.contact-information_paragraph {
-  margin-bottom: 5px;
-}
+  .contact-information_paragraph {
+    margin-bottom: 5px;
+  }
 
 
-/* -----------------------------  Footer  ----------------------------------------------- */
-.footer_inner {
-  display: flex;
-  padding: 22px 0px;
-  justify-content: center;
-  align-items: center;
-  height: 71px;
-}
+  /* -----------------------------  Footer  ----------------------------------------------- */
+  .footer_inner {
+    display: flex;
+    padding: 22px 0px;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+  }
 
-.copyright {
-  display: none;
-}
+  .copyright {
+    display: none;
+  }
 
 }
 
@@ -964,7 +957,8 @@ body::-webkit-scrollbar {
     padding-right: 41px;
     margin: 0 auto;
   }
-/* -----------------------------  Header  ----------------------------------------------- */
+
+  /* -----------------------------  Header  ----------------------------------------------- */
   .header-inner {
     height: 95px;
     display: flex;
@@ -989,26 +983,27 @@ body::-webkit-scrollbar {
     line-height: 30px;
     letter-spacing: -0.03em;
   }
-/* -----------------------------  Slider  ----------------------------------------------- */
+
+  /* -----------------------------  Slider  ----------------------------------------------- */
 
   .prev,
-.next {
-  padding: 0 30.12px;
-}
+  .next {
+    padding: 0 30.12px;
+  }
 
   .next {
     padding-right: 25px;
   }
 
 
-/* -----------------------------  Services  ----------------------------------------------- */
+  /* -----------------------------  Services  ----------------------------------------------- */
 
-.services {
-  padding-top: 39px;
-  padding-bottom: 64px;
-}
+  .services {
+    padding-top: 39px;
+    padding-bottom: 64px;
+  }
 
-.services-block {
+  .services-block {
     padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1016,22 +1011,84 @@ body::-webkit-scrollbar {
     justify-content: space-between;
   }
 
-/* -----------------------------  Portfolio  ----------------------------------------------- */
-.portfolio {
-  padding-top: 59px;
-  padding-bottom: 73px;
-}
+  /* -----------------------------  Portfolio  ----------------------------------------------- */
+  .portfolio {
+    padding-top: 59px;
+    padding-bottom: 73px;
+  }
 
-.portfolio-title {
-  padding-top: 0;
-}
-.portfolio_block {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 19.65px 19.65px;
-}
-.portfolio_block__item:nth-child(n+9) {
-  display: block;
-}
+  .portfolio-title {
+    padding-top: 0;
+  }
+
+  .portfolio_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 19px;
+  }
+
+  .portfolio_block__item:nth-child(n+9) {
+    display: block;
+  }
+
+
+
+  /* -----------------------------  About us  ----------------------------------------------- */
+  .about-us {
+    padding-top: 52px;
+    padding-bottom: 75px;
+  }
+
+  .about-us_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 34px 19px;
+  }
+
+  /* -----------------------------  Quote  ----------------------------------------------- */
+
+  .quote {
+    padding-top: 53px;
+    padding-bottom: 45px;
+  }
+
+  .quote-title {
+    padding-top: 0em;
+  }
+
+  .quote_block {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .form_wrapper {
+    flex-basis: 442px;
+    flex-grow: 2;
+  }
+
+  .quote_input {
+
+    width: 100%;
+  }
+
+  .contact-information_container {
+    margin-top: 0px;
+    flex-grow: 1;
+    flex-basis: 225px;
+    margin-left: 29px;
+  }
+
+  .quote_textarea {
+    width: 100%;
+  }
+
+  .form_button {
+    width: 136px;
+    height: 38px;
+  }
+  /* -----------------------------  Footer  ----------------------------------------------- */
 
 }
