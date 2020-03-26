@@ -807,15 +807,12 @@ body::-webkit-scrollbar {
     overflow: hidden;
     margin: 0 auto;
     width: 100%;
-    /* max-width: 375px; */
   }
 
   .slider_img {
     width: 100%;
     height: auto;
   }
-
-
 
   /* -----------------------------  Services  ----------------------------------------------- */
 
@@ -966,7 +963,7 @@ body::-webkit-scrollbar {
     padding-right: 41px;
     margin: 0 auto;
   }
-
+/* -----------------------------  Header  ----------------------------------------------- */
   .header-inner {
     height: 95px;
     display: flex;
@@ -991,13 +988,17 @@ body::-webkit-scrollbar {
     line-height: 30px;
     letter-spacing: -0.03em;
   }
+/* -----------------------------  Slider  ----------------------------------------------- */
 
-  /* 
-  .wrapper {
-    width: 80%;
-    margin: 0 auto;
-  } */
+  .prev,
+.next {
+  padding: 0 30.12px;
+}
 
+  .next {
+    padding-right: 25px;
+  }
+/* -----------------------------  Services  ----------------------------------------------- */
   /* .services-block {
     padding-top: 20px;
     display: grid;
