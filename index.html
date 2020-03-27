@@ -12,6 +12,27 @@
 </head>
 
 <body>
+  <aside class="mobile_menu">
+    <div class="mobile_overlay">
+      <div class="mobile_menu__window">
+        <div class="mobile_menu__header">
+          <div class="burger_menu bar_leftspace change">
+            <div class="bar1 "></div>
+            <div class="bar2 "></div>
+            <div class="bar3 "></div>
+          </div>
+          <h1 class="header-logo">SINGOLO<span class="active">*</span></h1>
+        </div>
+        <nav class="mobile_menu__navigation">
+          <a href="#home" class="menu_item menu_item__active">Home</a>
+          <a href="#services" class="menu_item">Services</a>
+          <a href="#portfolio" class="menu_item">Portfolio</a>
+          <a href="#about" class="menu_item">About</a>
+          <a href="#contact" class="menu_item">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </aside>
   <header class="header">
     <div class="wrapper">
       <div class="header-inner">
@@ -37,25 +58,25 @@
   <main class="main">
     <a href="" id="home" class="anchor"></a>
     <div class="intro">
-        <div class="intro-slider">
-          <div class="slide_container">
-            <div class="mySlides active_slide">
-              <img class="slider_img" src="./assets/Slide-1.png">
-              <div class="phone vertical_phone"></div>
-              <div class="screen screen_vertical"></div>
-              <div class="phone horizontal_phone"></div>
-              <div class="screen screen_horizontal"></div>
-            </div>
-            <div class="mySlides">
-              <img class="slider_img" src="./assets/Slide-2.png">
-            </div>
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
+      <div class="intro-slider">
+        <div class="slide_container">
+          <div class="mySlides active_slide">
+            <img class="slider_img" src="./assets/Slide-1.png">
+            <div class="phone vertical_phone"></div>
+            <div class="screen screen_vertical"></div>
+            <div class="phone horizontal_phone"></div>
+            <div class="screen screen_horizontal"></div>
           </div>
+          <div class="mySlides">
+            <img class="slider_img" src="./assets/Slide-2.png">
+          </div>
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
         </div>
+      </div>
     </div>
     <section class="services trigger">
-      
+
       <div class="wrapper">
         <div class="services-container">
           <h2 class="section-title">Our Services<a href="" id="services" class="anchor"></a></h2>
@@ -150,7 +171,7 @@
       </div>
     </section>
     <section class="portfolio">
-      
+
       <div class="wrapper">
         <h2 class="portfolio-title">Portfolio<a href="" id="portfolio" class="anchor"></a></h2>
         <p class="portfolio_intro">
@@ -249,7 +270,8 @@
               <input class="quote_input name" type="text" placeholder="Name (Required)" required />
               <input class="quote_input email" type="email" placeholder="Email (Required)" required />
               <input class="quote_input subject" placeholder="Subject" name="subject" />
-              <textarea class="quote_textarea descr" placeholder="Describe your project in detail..." rows="12" name="description"></textarea>
+              <textarea class="quote_textarea descr" placeholder="Describe your project in detail..." rows="12"
+                name="description"></textarea>
               <p><input type="submit" class="form_button" value="Send"></p>
             </form>
           </div>
