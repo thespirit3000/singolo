@@ -26,10 +26,9 @@ function createMenu() {
 
 export default class MobileMenu {
     constructor(){
-        this.menu = ''
+        this.menu = createMenu();
     }
     open() {
-        this.menu = createMenu();
         this.menu.classList.add('open');
         return
     }
