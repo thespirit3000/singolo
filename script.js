@@ -1,3 +1,5 @@
+import MobileMenu from './modules/MobileMenu.js';
+
 class Modal {
   constructor(classes) {
     this.classes = classes;
@@ -219,6 +221,27 @@ const addShrinkMenuOnMediaQuery = (x) => {
 
 
 
+// переписать функции открытия и закрытия меню 
+// const menu = (options) => {
+//   let mobileMenu = createMenu(options);
+//   return {
+//       open() {
+//         mobileMenu = document.querySelector('.mobile_menu');
+//         menu.classList.add('open')
+//       },
+//       close() {
+//           mobileMenu = document.querySelector('.mobile_menu');
+//           mobileMenu.classList.remove('open')
+//       },
+//       destroy() {
+//         mobileMenu = document.querySelector('.mobile_menu');
+//         document.body.removeChild(mobileMenu);
+//       }
+//   }
+// }
+
+const mobileMenu = new MobileMenu();
+
 const handleClick = event => {
   if (event.target.classList.contains("header-nav_item")) {
     changeActive("activeItem", ".header-nav_item", event.target);
@@ -251,6 +274,14 @@ const handleClick = event => {
 
   if (event.target.classList.contains("portfolio_block__item")) {
     changeActive("active_portfolio", ".portfolio_block__item", event.target);
+  }
+
+  if (event.target.classList.contains("open")) {
+    mobileMenu.open();
+  }
+  if (event.target.classList.contains("close")) {
+    mobileMenu.close();
+    mobileMenu.destroy();
   }
 };
 
