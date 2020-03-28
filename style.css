@@ -764,6 +764,8 @@ body::-webkit-scrollbar {
     display: inline-block;
     position: absolute;
     cursor: pointer;
+    padding: 20px;
+    z-index: 50;
     left: 0;
   }
 
@@ -812,14 +814,12 @@ body::-webkit-scrollbar {
 
   .mobile_menu.open .mobile_menu__window{
     transform: translateX(0px);
-    transition: transform 0.4s linear;
   }
 
   .mobile_overlay,
   .mobile_menu__window {
     opacity: 0;
     z-index: -1;
-    transition: transform 0.4s linear;
   }
 
   .mobile_overlay {
@@ -838,20 +838,22 @@ body::-webkit-scrollbar {
     background: #2D303A;
     box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
     transform: translateX(-278px);
-    transition: transform 0.4s linear;
+    transition: transform ease-out 0.5s;
   }
 
   .mobile_menu__header {
     height: 71px;
     display: flex;
-    padding-left: 71px;
     align-items: center;
     position: relative;
   }
 
-  .bar_leftspace {
-    left: 22px;
-  }
+.close{
+  padding: 22px;
+  font-size: 32px;
+}
+
+
 
   .mobile_menu__navigation {
     padding-left: 71px;
