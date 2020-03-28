@@ -17,12 +17,9 @@ class Modal {
     this.modalBtnOk.innerHTML = 'OK';
     this.setContent(content);
     this.constructModal();
-
-
     this.openModal();
     this.bindHandlers();
   }
-
 
   createDomNode(node, element, ...classes) {
     node = document.createElement(element);
@@ -78,8 +75,6 @@ const renderModalWindow = content => {
   let modal = new Modal("contact");
   modal.buildModal(content);
 };
-
-
 
 const handleBody = () => {
   const body = document.querySelector("body");
@@ -168,7 +163,6 @@ const nextSlider = (n) => {
   showSlider('from-right');
 }
 
-
 const changeDisplay = selector => {
   let screen = document.querySelector(selector);
   if (screen.style.opacity == "1") {
@@ -221,8 +215,6 @@ const addShrinkMenuOnMediaQuery = (x) => {
     }
 }
 
-
-
 const handleClick = event => {
   if (event.target.classList.contains("header-nav_item")) {
     changeActive("activeItem", ".header-nav_item", event.target);
@@ -262,7 +254,6 @@ const handleClick = event => {
   }
   if (event.target.classList.contains("close")) {
     mobileMenu.close();
-    // mobileMenu.destroy();
   }
 
   if (event.target.classList.contains("menu_item")) {
@@ -272,7 +263,6 @@ const handleClick = event => {
 };
 
 const mobileMenu = new MobileMenu();
-
 const initialize = () => {
   handleBody();
   handleForm();
