@@ -1,7 +1,7 @@
 function createMenu() {
-    const menu = document.createElement('aside');
-    menu.classList.add('mobile_menu');
-    menu.insertAdjacentHTML(`afterbegin`, `
+  const menu = document.createElement('aside');
+  menu.classList.add('mobile_menu');
+  menu.insertAdjacentHTML(`afterbegin`, `
     <div class="mobile_overlay">
       <div class="mobile_menu__window">
         <div class="mobile_menu__header">
@@ -20,24 +20,26 @@ function createMenu() {
       </div>
     </div>
     `)
-    document.body.appendChild(menu);
-    return menu;
-  }
+  document.body.appendChild(menu);
+  return menu;
+}
 
 export default class MobileMenu {
-    constructor(){
-        this.menu = createMenu();
-    }
-    open() {
-        this.menu.classList.add('open');
-        return
-    }
-    close() {
-        this.menu.classList.remove('open');
-        return
-    }
-    destroy(){
-        document.body.removeChild(this.menu);
-        return
-    }
+  constructor() {
+    this.menu = createMenu();
+  }
+  open() {
+    document.body.style.overflowY = 'hidden';
+    this.menu.classList.add('open');
+    return
+  }
+  close() {
+    document.body.style.overflowY = 'scroll';
+    this.menu.classList.remove('open');
+    return
+  }
+  destroy() {
+    document.body.removeChild(this.menu);
+    return
+  }
 }

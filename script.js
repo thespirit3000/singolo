@@ -221,7 +221,7 @@ const addShrinkMenuOnMediaQuery = (x) => {
     }
 }
 
-const mobileMenu = new MobileMenu();
+
 
 const handleClick = event => {
   if (event.target.classList.contains("header-nav_item")) {
@@ -258,28 +258,29 @@ const handleClick = event => {
   }
 
   if (event.target.classList.contains("open_menu")) {
-    document.body.style.overflowY = 'hidden';
     mobileMenu.open();
   }
   if (event.target.classList.contains("close")) {
-    document.body.style.overflowY = 'scroll';
     mobileMenu.close();
-    mobileMenu.destroy();
+    // mobileMenu.destroy();
   }
 
   if (event.target.classList.contains("menu_item")) {
     changeActive("menu_item__active", ".menu_item", event.target);
+    mobileMenu.close();
   }
 };
+
+const mobileMenu = new MobileMenu();
 
 const initialize = () => {
   handleBody();
   handleForm();
   setMaxSignsTextArea();
+  
 };
 
 window.onload = initialize;
-//window.onscroll = scrollHandle;
 window.onwheel = headerChangeActive;
 let x = window.matchMedia("(min-width: 767px)")
 addShrinkMenuOnMediaQuery(x) // Call listener function at run time
