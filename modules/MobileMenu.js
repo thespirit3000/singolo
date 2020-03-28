@@ -1,14 +1,12 @@
-function createMenu(options) {
+function createMenu() {
     const menu = document.createElement('aside');
     menu.classList.add('mobile_menu');
     menu.insertAdjacentHTML(`afterbegin`, `
     <div class="mobile_overlay">
       <div class="mobile_menu__window">
         <div class="mobile_menu__header">
-          <div class="burger_menu bar_leftspace change close">
-            <div class="bar1 "></div>
-            <div class="bar2 "></div>
-            <div class="bar3 "></div>
+          <div class="close">
+            &times
           </div>
           <h1 class="header-logo">SINGOLO<span class="active">*</span></h1>
         </div>
