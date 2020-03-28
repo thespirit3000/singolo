@@ -149,32 +149,31 @@ body::-webkit-scrollbar {
 }
 
 .phone {
-  width: 216px;
-  height: 458px;
+  width: 21%;
+  height: 76%;
   border-radius: 30px;
+  position: relative;
 }
 
 .vertical_phone {
   position: absolute;
-  top: 55px;
-  left: 112px;
+  top: 9.1%;
+  left: 11%;
   z-index: 20;
   opacity: 0;
-
 }
 
 .horizontal_phone {
   position: absolute;
-  top: 56px;
-  left: 545px;
+  top: 9.3%;
+  left: 53.5%;
   z-index: 20;
   transform: rotate(90deg);
-  opacity: 0.6;
 }
 
 .screen {
-  width: 189px;
-  height: 334px;
+  width: 18.5%;
+  height: 55.2%;
   background-color: #2d303a;
   border-radius: 5px;
 }
@@ -182,8 +181,8 @@ body::-webkit-scrollbar {
 .screen_vertical {
   opacity: 0;
   position: absolute;
-  top: 118px;
-  left: 126px;
+  top: 19.6%;
+  left: 12.3%;
   z-index: 10;
   transition: opacity 0.6s;
 
@@ -192,8 +191,8 @@ body::-webkit-scrollbar {
 .screen_horizontal {
   opacity: 0;
   position: absolute;
-  top: 118px;
-  left: 557px;
+  top: 19.5%;
+  left: 54.58%;
   z-index: 10;
   transform: rotate(90deg);
   transition: opacity 0.6s;
@@ -1047,6 +1046,13 @@ body::-webkit-scrollbar {
 
   /* -----------------------------  Slider  ----------------------------------------------- */
 
+  .slider_img {
+    width: 100%;
+    height: auto;
+    max-width: 1020px;
+  }
+
+
   .prev,
   .next {
     padding: 0 30.12px;
@@ -1168,6 +1174,9 @@ body::-webkit-scrollbar {
 
   /* -----------------------------  Header  ----------------------------------------------- */
   /* -----------------------------  Slider  ----------------------------------------------- */
+  .slide_container{
+    width: 1020px;
+  }
   .prev,
   .next {
     padding: 0 40px;
