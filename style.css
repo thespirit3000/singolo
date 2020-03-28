@@ -993,6 +993,10 @@ body::-webkit-scrollbar {
     width: 100%;
   }
 
+  .quote_textarea{
+    width: 100%;
+  }
+
   .form_button {
     font-weight: bold;
     display: block;
@@ -1029,7 +1033,7 @@ body::-webkit-scrollbar {
   }
 
 }
-
+  /* -----------------------------  Footer  ----------------------------------------------- */
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 100%;
