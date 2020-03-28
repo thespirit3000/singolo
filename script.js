@@ -258,9 +258,11 @@ const handleClick = event => {
   }
 
   if (event.target.classList.contains("open")) {
+    document.body.style.overflowY = 'hidden';
     mobileMenu.open();
   }
   if (event.target.classList.contains("close")) {
+    document.body.style.overflowY = 'scroll';
     mobileMenu.close();
     mobileMenu.destroy();
   }
