@@ -79,6 +79,8 @@ const renderModalWindow = content => {
   modal.buildModal(content);
 };
 
+
+
 const handleBody = () => {
   const body = document.querySelector("body");
   body.addEventListener("click", handleClick);
@@ -218,27 +220,6 @@ const addShrinkMenuOnMediaQuery = (x) => {
       window.onscroll = scrollHandle;
     }
 }
-
-
-
-// переписать функции открытия и закрытия меню 
-// const menu = (options) => {
-//   let mobileMenu = createMenu(options);
-//   return {
-//       open() {
-//         mobileMenu = document.querySelector('.mobile_menu');
-//         menu.classList.add('open')
-//       },
-//       close() {
-//           mobileMenu = document.querySelector('.mobile_menu');
-//           mobileMenu.classList.remove('open')
-//       },
-//       destroy() {
-//         mobileMenu = document.querySelector('.mobile_menu');
-//         document.body.removeChild(mobileMenu);
-//       }
-//   }
-// }
 
 const mobileMenu = new MobileMenu();
 
