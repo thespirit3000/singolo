@@ -257,7 +257,7 @@ const handleClick = event => {
     changeActive("active_portfolio", ".portfolio_block__item", event.target);
   }
 
-  if (event.target.classList.contains("open")) {
+  if (event.target.classList.contains("open_menu")) {
     document.body.style.overflowY = 'hidden';
     mobileMenu.open();
   }
@@ -265,6 +265,10 @@ const handleClick = event => {
     document.body.style.overflowY = 'scroll';
     mobileMenu.close();
     mobileMenu.destroy();
+  }
+
+  if (event.target.classList.contains("menu_item")) {
+    changeActive("menu_item__active", ".menu_item", event.target);
   }
 };
 
