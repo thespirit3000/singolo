@@ -145,6 +145,8 @@ const setMaxSignsTextArea = () => {
   setMaxSigns('.quote_textarea', state.maxSigns);
 }
 
+
+
 // -------------------------------------------------------------------------------
 
 const scrollHandle = () => {
@@ -203,6 +205,13 @@ const handleClick = event => {
   if (event.target.classList.contains("menu_item")) {
     changeActive("menu_item__active", ".menu_item", event.target);
     mobileMenu.close();
+  }
+
+  if (event.target.classList.contains("link_img")) {
+    event.preventDefault();
+  }
+  if (event.target.classList.contains("social_link")) {
+    event.preventDefault();
   }
 };
 
