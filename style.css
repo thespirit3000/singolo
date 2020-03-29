@@ -709,7 +709,7 @@ body::-webkit-scrollbar {
 
 /* ---------------------------------------------------------------------------------------- */
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 319px) {
 
   .wrapper {
     width: 100%;
@@ -799,11 +799,14 @@ body::-webkit-scrollbar {
     box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
     transform: translateX(-278px);
     transition: transform ease-out 0.5s;
+    display: flex;
+    flex-direction: column;
   }
 
   .mobile_menu__header {
     height: 71px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
   }
@@ -813,12 +816,9 @@ body::-webkit-scrollbar {
     font-size: 32px;
   }
 
-
-
   .mobile_menu__navigation {
+    margin: auto 0;
     padding-left: 71px;
-    padding-top: 162px;
-    height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -841,7 +841,6 @@ body::-webkit-scrollbar {
   }
 
   /* -----------------------------  Slider  ----------------------------------------------- */
-
 
   .slide_container {
     position: relative;
