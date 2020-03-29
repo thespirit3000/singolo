@@ -736,6 +736,7 @@ body::-webkit-scrollbar {
     display: inline-block;
     position: absolute;
     cursor: pointer;
+    align-items: center;
     padding: 20px;
     z-index: 50;
     left: 0;
@@ -757,19 +758,6 @@ body::-webkit-scrollbar {
     margin: 6px 0;
     transition: 0.4s;
     border-radius: 1.2px;
-  }
-
-
-  .change .bar1 {
-    transform: rotate(90deg) translate(6px, 12px);
-  }
-
-  .change .bar2 {
-    transform: rotate(90deg) translate(-3px, 0px);
-  }
-
-  .change .bar3 {
-    transform: rotate(90deg) translate(-11px, -12px);
   }
 
   /* -----------------------------  Mobile Menu  ----------------------------------------------- */
@@ -907,7 +895,7 @@ body::-webkit-scrollbar {
   .portfolio_block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 14px 13px;
+    grid-gap: 10px 10px;
   }
 
   .portfolio_block__item {
@@ -1001,7 +989,6 @@ body::-webkit-scrollbar {
 
 }
 
-/* -----------------------------  Footer  ----------------------------------------------- */
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 100%;
@@ -1084,7 +1071,7 @@ body::-webkit-scrollbar {
   .portfolio_block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px 19px;
+    grid-gap: 20px 20px;
   }
 
   .portfolio_block__item:nth-child(n+9) {

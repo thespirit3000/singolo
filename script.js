@@ -51,7 +51,7 @@ const headerShrink = () => {
     document.body.scrollTop > 120 ||
     document.documentElement.scrollTop > 120
   ) {
-    document.querySelector(".header-inner").style.height = "50px";
+    document.querySelector(".header-inner").style.height = "71px";
   } else {
     document.querySelector(".header-inner").style.height = "95px";
   }
@@ -145,8 +145,6 @@ const setMaxSignsTextArea = () => {
   setMaxSigns('.quote_textarea', state.maxSigns);
 }
 
-
-
 // -------------------------------------------------------------------------------
 
 const scrollHandle = () => {
@@ -225,6 +223,7 @@ const initialize = () => {
 
 window.onload = initialize;
 window.onwheel = headerChangeActive;
-let x = window.matchMedia("(min-width: 767px)")
-addShrinkMenuOnMediaQuery(x) // Call listener function at run time
+
+let x = window.matchMedia("(min-width: 768px)")
+addShrinkMenuOnMediaQuery(x)
 x.addListener(addShrinkMenuOnMediaQuery)
