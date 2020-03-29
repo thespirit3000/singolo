@@ -89,6 +89,8 @@ const handleForm = () => {
 const handleSubmit = () => {
   event.preventDefault();
   generateContactModal();
+  const form = document.querySelector(".form");
+  form.reset();
 };
 
 const getFormData = (formName, ...formData) => {
@@ -116,7 +118,7 @@ const headerShrink = () => {
 }
 
 const headerChangeActive = () => {
-  let anchorList = domArray('.anchor');  
+  let anchorList = domArray('.anchor');
   anchorList.forEach(element => {
     if (element.getBoundingClientRect().top < 300) {
       let activeItem = document.querySelector(`#link_${element.id}`);
@@ -134,20 +136,20 @@ const changeCurrentSlider = (n) => {
 }
 
 const hideSlider = (direction) => {
-  isEnabled =false;
+  isEnabled = false;
   slides[currentSlide].classList.add(direction);
-  slides[currentSlide].addEventListener('animationend', function(){
+  slides[currentSlide].addEventListener('animationend', function () {
     this.classList.remove('active_slide', direction);
-    
+
   })
 }
 
 const showSlider = (direction) => {
   slides[currentSlide].classList.add('next_slide', direction);
-  slides[currentSlide].addEventListener('animationend', function(){
+  slides[currentSlide].addEventListener('animationend', function () {
     this.classList.remove('next_slide', direction);
     this.classList.add('active_slide');
-    isEnabled =true;
+    isEnabled = true;
   })
 }
 
@@ -210,9 +212,9 @@ const scrollHandle = () => {
 };
 
 const addShrinkMenuOnMediaQuery = (x) => {
-    if (x.matches) { // If media query matches
-      window.onscroll = scrollHandle;
-    }
+  if (x.matches) { // If media query matches
+    window.onscroll = scrollHandle;
+  }
 }
 
 const handleClick = event => {
@@ -267,11 +269,11 @@ const initialize = () => {
   handleBody();
   handleForm();
   setMaxSignsTextArea();
-  
+
 };
 
 window.onload = initialize;
 window.onwheel = headerChangeActive;
 let x = window.matchMedia("(min-width: 767px)")
 addShrinkMenuOnMediaQuery(x) // Call listener function at run time
-x.addListener(addShrinkMenuOnMediaQuery)  
+x.addListener(addShrinkMenuOnMediaQuery)
