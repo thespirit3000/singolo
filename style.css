@@ -172,8 +172,8 @@ body::-webkit-scrollbar {
 }
 
 .screen {
-  width: 18.5%;
-  height: 55.2%;
+  width: 18.55%;
+  height: 55.25%;
   background-color: #2d303a;
   border-radius: 5px;
 }
@@ -192,7 +192,7 @@ body::-webkit-scrollbar {
   opacity: 0;
   position: absolute;
   top: 19.5%;
-  left: 54.58%;
+  left: 54.6%;
   z-index: 10;
   transform: rotate(90deg);
   transition: opacity 0.6s;
