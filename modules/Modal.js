@@ -1,4 +1,4 @@
-export class Modal {
+export default class Modal {
   constructor(classes) {
     this.classes = classes;
     this.modal = '';
@@ -15,12 +15,9 @@ export class Modal {
     this.modalBtnOk.innerHTML = 'OK';
     this.setContent(content);
     this.constructModal();
-
-
     this.openModal();
     this.bindHandlers();
   }
-
 
   createDomNode(node, element, ...classes) {
     node = document.createElement(element);
