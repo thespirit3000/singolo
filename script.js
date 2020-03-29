@@ -243,8 +243,10 @@ const handleClick = event => {
   }
 
   if (event.target.classList.contains("portfolio_selector__item")) {
+    event.preventDefault();
     shuffleDom(".portfolio_block");
     changeActive("selected", ".portfolio_selector__item", event.target);
+    
   }
 
   if (event.target.classList.contains("portfolio_block__item")) {
