@@ -1174,9 +1174,10 @@ body::-webkit-scrollbar {
 
   /* -----------------------------  Header  ----------------------------------------------- */
   /* -----------------------------  Slider  ----------------------------------------------- */
-  .slide_container{
+  .slide_container {
     width: 1020px;
   }
+
   .prev,
   .next {
     padding: 0 40px;
@@ -1219,7 +1220,7 @@ body::-webkit-scrollbar {
     padding-bottom: 64px;
   }
 
-  .contact-information_list{
+  .contact-information_list {
     margin-top: 22px;
   }
 
