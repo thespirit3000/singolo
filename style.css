@@ -897,15 +897,8 @@ body::-webkit-scrollbar {
   }
 
   .portfolio_selector__item {
-    font-size: 12px;
     letter-spacing: -1px;
-    font-weight: 400;
-    text-decoration: none;
-    border: 1px #767e9e solid;
-    border-radius: 5px;
-    color: #767e9e;
     margin-right: 10px;
-    transition: color 0.3s;
     height: 22px;
     padding: 3px auto;
     text-align: center;
